@@ -1,0 +1,227 @@
+examples = [
+
+    # ------------------------------
+    # 1–10: Aktuelle Nachrichten & Ereignisse
+    # ------------------------------
+
+    {
+        "inputs": {"question": "Gibt es aktuell Streiks oder Ausfälle im Kindergartenbetrieb in Oberösterreich?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Nachrichten über Streiks, Ausfälle oder Personalengpässe per Websuche prüfen und zusammenfassen."}
+    },
+    {
+        "inputs": {"question": "Welche neuen Kinderbetreuungsgesetze sind 2025 in Österreich beschlossen worden?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle gesetzliche Änderungen recherchieren, z.B. Bildungsreform, Kindergartenfinanzierung, Arbeitsjahr-Regelungen."}
+    },
+    {
+        "inputs": {"question": "Gab es kürzlich Pressekonferenzen des Landes OÖ zur Kinderbetreuung?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Pressemitteilungen des Landes OÖ oder der Bildungsdirektion suchen und zusammenfassen."}
+    },
+    {
+        "inputs": {"question": "Welche neuen Förderprogramme für Familien wurden 2025 angekündigt?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Förderprogramme aus Nachrichten/Regierungsquellen per Websuche recherchieren."}
+    },
+    {
+        "inputs": {"question": "Gibt es aktuelle Wartezeiten oder Engpässe bei Kinderbetreuungsplätzen in Linz?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Berichte zu Wartelisten, Versorgungsengpässen oder Bedarfsanalysen recherchieren."}
+    },
+    {
+        "inputs": {"question": "Was berichten Medien derzeit über die Kinderbetreuungssituation in Österreich?"},
+        "outputs": {"expected": "Die Antwort soll die wichtigsten aktuellen Medienberichte zusammenfassen."}
+    },
+    {
+        "inputs": {"question": "Wurde 2025 ein neuer Bildungsplan für Kindergärten vorgestellt?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle politische oder ministerielle Ankündigungen recherchieren."}
+    },
+    {
+        "inputs": {"question": "Gibt es aktuell Proteste oder Aktionen von Elternvereinen zur Kinderbetreuung in OÖ?"},
+        "outputs": {"expected": "Die Antwort soll Presse- oder Webinhalte über Proteste, Forderungen oder Elterninitiativen recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Änderungen bei Elternbeiträgen wurden dieses Jahr diskutiert?"},
+        "outputs": {"expected": "Die Antwort soll Web-Nachrichten zu Gebührenänderungen oder politischen Diskussionen recherchieren."}
+    },
+    {
+        "inputs": {"question": "Gibt es aktuelle Qualitätsberichte zu Kindergärten in OÖ?"},
+        "outputs": {"expected": "Die Antwort soll nach aktuellen Veröffentlichungen der Bildungsdirektion oder Evaluationsberichten suchen."}
+    },
+
+    # ------------------------------
+    # 11–20: Lokale Events & Veranstaltungen
+    # ------------------------------
+
+    {
+        "inputs": {"question": "Welche Familienveranstaltungen finden dieses Wochenende in Linz statt?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Events, Termine und Kinderprogramme aus dem Web suchen."}
+    },
+    {
+        "inputs": {"question": "Welche Kindertheater-Aufführungen gibt es aktuell in Oberösterreich?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Kindertheater-Events recherchieren."}
+    },
+    {
+        "inputs": {"question": "Gibt es im Sommer 2025 Feriencamps oder Betreuungsprogramme in OÖ?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Feriencamp-Angebote online recherchieren und zusammenfassen."}
+    },
+    {
+        "inputs": {"question": "Welche Events zum Schulstart finden in Linz statt?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Veranstaltungen rund um Schul- oder Kindergartenstart recherchieren."}
+    },
+    {
+        "inputs": {"question": "Gibt es Elternworkshops oder Infoabende zum Kindergartenstart in Wels?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Termine und Elternveranstaltungen suchen."}
+    },
+    {
+        "inputs": {"question": "Welche kostenlosen Kinderprogramme bietet die Stadt Linz aktuell an?"},
+        "outputs": {"expected": "Die Antwort soll städtische Webseiten, Eventkalender und Kinderprogramme durchsuchen."}
+    },
+    {
+        "inputs": {"question": "Gibt es in OÖ derzeit Bewegungs- oder Sportprogramme für Kleinkinder?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Sport-/Bewegungsangebote online finden."}
+    },
+    {
+        "inputs": {"question": "Wann finden in diesem Jahr die Tage der offenen Tür in Kindergärten in Linz statt?"},
+        "outputs": {"expected": "Die Antwort soll Termine der Einrichtungen oder der Stadt Linz recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Museen in OÖ bieten aktuell Kinderprogramme an?"},
+        "outputs": {"expected": "Die Antwort soll Web-Infos zu aktuellen kinderfreundlichen Museumsevents zusammenstellen."}
+    },
+    {
+        "inputs": {"question": "Gibt es derzeit Eltern-Kind-Treffs oder Babygruppen in Steyr?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Angebote von Gemeinden, Vereinen oder Elternorganisationen suchen."}
+    },
+
+    # ------------------------------
+    # 21–30: Öffnungszeiten, Ferien, regionale Infos
+    # ------------------------------
+
+    {
+        "inputs": {"question": "Wann sind die Sommerferien 2025 in Oberösterreich?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Schulferienkalender online abrufen."}
+    },
+    {
+        "inputs": {"question": "Wie sind die Öffnungszeiten der städtischen Service-Stellen für Kinderbetreuung in Linz?"},
+        "outputs": {"expected": "Die Antwort soll auf die Website der Stadt Linz zugreifen und aktuelle Öffnungszeiten recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Gemeinden in OÖ haben 2025 neue Kinderbetreuungseinrichtungen eröffnet?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Gemeinde-News durchsuchen und neue Einrichtungen auflisten."}
+    },
+    {
+        "inputs": {"question": "Gibt es in Wels 2025 neue Hortgruppen oder Erweiterungen?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Gemeinderatsbeschlüsse oder Pressemitteilungen suchen."}
+    },
+    {
+        "inputs": {"question": "Hat Linz neue Krabbelstuben geplant oder eröffnet?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Bau- und Planungsausschussmeldungen recherchieren."}
+    },
+    {
+        "inputs": {"question": "Sind heuer besondere Projekte zur Sprachförderung in OÖ gestartet worden?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Bildungsprojekte online recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Gemeinden haben verlängerte Öffnungszeiten in ihren Kinderbetreuungseinrichtungen angekündigt?"},
+        "outputs": {"expected": "Die Antwort soll per Websuche aktuelle Gemeindeinformationen zusammenfassen."}
+    },
+    {
+        "inputs": {"question": "Gibt es heuer neue Elternfahrdienste oder Mobilitätsangebote für Kindergartenkinder?"},
+        "outputs": {"expected": "Die Antwort soll nach jüngsten Verkehrs- oder Mobilitätsmeldungen suchen."}
+    },
+    {
+        "inputs": {"question": "Welche Städte in OÖ veröffentlichen Online-Wartezeiten oder Bedarfsstatistiken zu KBBEs?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Gemeindewebseiten oder Presseberichte recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Änderungen gab es zuletzt im OÖ Schulzeitgesetz, die Kindergärten betreffen?"},
+        "outputs": {"expected": "Die Antwort soll Gesetzesänderungen oder offizielle Mitteilungen per Websuche zusammenfassen."}
+    },
+
+    # ------------------------------
+    # 31–40: Bundesweite Infos & Trends
+    # ------------------------------
+
+    {
+        "inputs": {"question": "Welche bundesweiten Reformen im Kindergartenwesen wurden 2025 diskutiert?"},
+        "outputs": {"expected": "Die Antwort soll nationale Nachrichtenquellen durchsuchen."}
+    },
+    {
+        "inputs": {"question": "Gibt es aktuelle österreichweite Studien zur Kinderbetreuungssituation?"},
+        "outputs": {"expected": "Die Antwort soll neue Studien (z.B. Statistik Austria, AK, OECD, WIFO) online finden."}
+    },
+    {
+        "inputs": {"question": "Welche Trends in der frühkindlichen Bildung werden aktuell in Österreich diskutiert?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Fachartikel, Blogs und Medienberichte per Websuche ausgeben."}
+    },
+    {
+        "inputs": {"question": "Gibt es 2025 neue Förderungen für Tageseltern auf Bundesebene?"},
+        "outputs": {"expected": "Die Antwort soll bundesweite Fördermeldungen recherchieren."}
+    },
+    {
+        "inputs": {"question": "Wie steht Österreich im EU-Vergleich bei Kinderbetreuungskosten?"},
+        "outputs": {"expected": "Die Antwort soll internationale Rankings oder Studien recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Initiativen gibt es aktuell zur Entlastung berufstätiger Eltern?"},
+        "outputs": {"expected": "Die Antwort soll politische Programme sowie NGO-Initiativen recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Debatten gibt es aktuell zu Öffnungszeiten von Kindergärten in Österreich?"},
+        "outputs": {"expected": "Die Antwort soll Presseberichte über Streitpunkte oder Reformpläne zusammenfassen."}
+    },
+    {
+        "inputs": {"question": "Wie entwickelt sich die Zahl der verfügbaren Betreuungsplätze in Österreich laut aktuellen Medien?"},
+        "outputs": {"expected": "Die Antwort soll Medienberichte zusammenfassen und Trends nennen."}
+    },
+    {
+        "inputs": {"question": "Gibt es Berichte über Fachkräftemangel in Kindergärten in Österreich?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Berichte über Pädagog*innen-Mangel recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche neuen Leitfäden oder Broschüren wurden 2025 zur Elementarpädagogik veröffentlicht?"},
+        "outputs": {"expected": "Die Antwort soll Veröffentlichungen des BMBWF oder der Bildungsdirektionen recherchieren."}
+    },
+
+    # ------------------------------
+    # 41–50: Sonstige Web-Themen, die SQL/RAG nicht abdecken
+    # ------------------------------
+
+    {
+        "inputs": {"question": "Welche Krabbelstuben in OÖ haben aktuell offene Stellen für Pädagoginnen?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Stellenausschreibungen online recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Kindergärten in OÖ suchen derzeit Assistenzkräfte?"},
+        "outputs": {"expected": "Die Antwort soll Jobportale und regionale Webseiten per Websuche prüfen."}
+    },
+    {
+        "inputs": {"question": "Welche neuen Projekte zur Digitalisierung in Kindergärten gibt es 2025?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Initiativen aus Presse und Fachmedien recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche App-Empfehlungen für Eltern im Bereich Kinderbetreuung sind derzeit beliebt?"},
+        "outputs": {"expected": "Die Antwort soll App-Listen, Blogartikel und Empfehlungen online suchen."}
+    },
+    {
+        "inputs": {"question": "Welche Kinderbetreuungsvereine in OÖ haben aktuell Infoveranstaltungen?"},
+        "outputs": {"expected": "Die Antwort soll Vereinswebseiten und Veranstaltungskalender durchsuchen."}
+    },
+    {
+        "inputs": {"question": "Gibt es in OÖ neue Pilotprojekte zur integrativen Betreuung?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Meldungen zu Integrationsprojekten recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Gemeinden haben 2025 neue Spielplätze eröffnet?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Gemeindewebseiten und Lokalnews durchsuchen."}
+    },
+    {
+        "inputs": {"question": "Welche Vereine in OÖ bieten Elternberatungen oder Familiencoachings an?"},
+        "outputs": {"expected": "Die Antwort soll Vereine, Beratungsstellen und NGOs per Websuche finden."}
+    },
+    {
+        "inputs": {"question": "Welche Änderungen gab es zuletzt bei der Eltern-Kind-Zuschussförderung in OÖ?"},
+        "outputs": {"expected": "Die Antwort soll aktuelle Updates oder politische Diskussionen recherchieren."}
+    },
+    {
+        "inputs": {"question": "Welche Städte in OÖ veröffentlichen aktuell Bauprojekte für neue Kindergärten?"},
+        "outputs": {"expected": "Die Antwort soll Gemeindeportale nach aktuellen Bauankündigungen durchsuchen."}
+    },
+]

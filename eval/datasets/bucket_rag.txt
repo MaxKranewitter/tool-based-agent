@@ -1,0 +1,291 @@
+examples = [
+    # -----------------------------------------------------------
+    # 45 EXAMPLES BASIERT AUF: OÖ Sozialratgeber 2025
+    # -----------------------------------------------------------
+
+    {
+        "inputs": {"question": "Was kostet ein Kindergartenplatz in Oberösterreich?"},
+        "outputs": {
+            "expected": "Die Antwort soll erwähnen, dass Kindergarten und Krabbelstube bis 13:00 Uhr beitragsfrei sind und ab 13:00 Uhr ein Nachmittagstarif nach der Oö. Elternbeitragsverordnung zu zahlen ist (Sozialratgeber)."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viel kostet die Betreuung in einer Krabbelstube in OÖ?"},
+        "outputs": {
+            "expected": "Die Antwort soll erklären, dass Betreuung bis 13:00 Uhr beitragsfrei ist und danach ein Nachmittagstarif gemäß Elternbeitragsverordnung gilt."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Unterstützung gibt es für Tagesmütter in Oberösterreich?"},
+        "outputs": {
+            "expected": "Die Antwort soll nennen, dass Tagesmütter/Tagesväter eine flexible Betreuungsform bieten und von Tagesmüttervereinen ausgebildet, begleitet und vermittelt werden."
+        },
+    },
+    {
+        "inputs": {"question": "Wer ist für Tagesmütter zuständig?"},
+        "outputs": {
+            "expected": "Die Antwort soll erklären, dass Tagesmüttervereine sowie die Bildungsdirektion OÖ für Ausbildung und Vermittlung zuständig sind."
+        },
+    },
+    {
+        "inputs": {"question": "Wo finde ich Tagesmütter in Wels?"},
+        "outputs": {
+            "expected": "Die Antwort soll auf Tagesmüttervereine wie den Verein Wels verweisen."
+        },
+    },
+    {
+        "inputs": {"question": "Was ist der OÖ Kinderbetreuungsbonus?"},
+        "outputs": {
+            "expected": "Die Antwort soll nennen, dass der Bonus €960 pro Kind beträgt und gewährt wird, wenn der Gratis-Kindergarten bis 13 Uhr nicht genutzt wird."
+        },
+    },
+    {
+        "inputs": {"question": "Wie beantrage ich den Kinderbetreuungsbonus?"},
+        "outputs": {
+            "expected": "Die Antwort soll erwähnen, dass der Antrag über familienkarte.at eingereicht wird sowie die Voraussetzungen nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Voraussetzungen gelten für den Kinderbetreuungsbonus?"},
+        "outputs": {
+            "expected": "Die Antwort soll Voraussetzungen wie Hauptwohnsitz in OÖ, Familienbeihilfe und Nichtnutzung des Gratis-Kindergartens nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Bis zu welchem Alter ist Kinderbetreuung beitragsfrei?"},
+        "outputs": {
+            "expected": "Die Antwort soll erwähnen, dass Betreuung bis 13 Uhr beitragsfrei ist, in Krabbelstuben ab dem 30. Lebensmonat ebenfalls."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Stellen beraten mich bei Problemen in der Familie?"},
+        "outputs": {
+            "expected": "Die Antwort soll Elternberatung, Mutterberatung, Kinder- und Jugendhilfe sowie Frühe Hilfen nennen."
+        },
+    },
+
+    # ---- weitere 35 ----
+
+    {
+        "inputs": {"question": "Welche Angebote gibt es für Kinder bis 3 Jahre?"},
+        "outputs": {
+            "expected": "Die Antwort soll Eltern- und Mutterberatung sowie Frühe Hilfen nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Was ist die Eltern- und Mutterberatung?"},
+        "outputs": {
+            "expected": "Die Antwort soll beschreiben, dass dort Fragen zu Entwicklung, Gesundheit und Ernährung beantwortet werden."
+        },
+    },
+    {
+        "inputs": {"question": "An wen kann ich mich wenden, wenn ich Erziehungsfragen habe?"},
+        "outputs": {
+            "expected": "Die Antwort soll Erziehungs- und Familienberatung sowie Kinder- und Jugendhilfe nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wer hilft bei Problemen rund um Babys und Kleinkinder?"},
+        "outputs": {
+            "expected": "Die Antwort soll Elternberatung und Frühe Hilfen nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Was sind Frühe Hilfen in OÖ?"},
+        "outputs": {
+            "expected": "Die Antwort soll erklären, dass Frühe Hilfen kostenlose Unterstützung für Eltern von Kindern bis 3 Jahren bieten."
+        },
+    },
+    {
+        "inputs": {"question": "Gibt es Unterstützung nach der Geburt?"},
+        "outputs": {
+            "expected": "Die Antwort soll Mobile Familiendienste nennen, die zeitlich befristet unterstützen."
+        },
+    },
+    {
+        "inputs": {"question": "Was machen Mobile Familiendienste?"},
+        "outputs": {
+            "expected": "Die Antwort soll Betreuung, Haushaltsunterstützung und Begleitung als Kernleistungen erwähnen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Betreuung gibt es für kranke Kinder zuhause?"},
+        "outputs": {
+            "expected": "Die Antwort soll Mobile Kinderkrankenpflege nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wer bietet mobile Kinderkrankenpflege an?"},
+        "outputs": {
+            "expected": "Die Antwort soll Hilfswerk OÖ und MOKI OÖ nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Was ist eine flexible Betreuungsform für Kinder über 6 Jahren?"},
+        "outputs": {
+            "expected": "Die Antwort soll Tagesmütter/Tagesväter nennen, deren Angebote bis 16 Jahre reichen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche finanziellen Unterstützungen gibt es für Familien in OÖ?"},
+        "outputs": {
+            "expected": "Die Antwort soll Kinderbetreuungsbonus und Elternbildungsgutscheine nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Kann ich finanzielle Unterstützung für Kinderbetreuung beantragen?"},
+        "outputs": {
+            "expected": "Die Antwort soll den Kinderbetreuungsbonus nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Bekomme ich Unterstützung, wenn mein Kind nicht in den Kindergarten geht?"},
+        "outputs": {
+            "expected": "Die Antwort soll erklären, dass der Kinderbetreuungsbonus genau dafür vorgesehen ist."
+        },
+    },
+    {
+        "inputs": {"question": "Sind Kindergärten in OÖ kostenlos?"},
+        "outputs": {
+            "expected": "Die Antwort soll sagen: bis 13 Uhr kostenlos; danach Tarif laut Verordnung."
+        },
+    },
+    {
+        "inputs": {"question": "Gibt es flexible Betreuungszeiten in OÖ?"},
+        "outputs": {
+            "expected": "Die Antwort soll Tagesmütter/Tagesväter nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wie finde ich Betreuung in meiner Nähe?"},
+        "outputs": {
+            "expected": "Die Antwort soll Kinderkompass und Beratungsstellen nennen."
+        },
+    },
+    {
+        "inputs": {"question": "An wen kann ich mich wenden, wenn ich familiäre Unterstützung brauche?"},
+        "outputs": {
+            "expected": "Die Antwort soll Eltern- und Mutterberatung, Jugendhilfe und Mobile Dienste nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wer hilft mir, wenn ich mit meinem Baby überfordert bin?"},
+        "outputs": {
+            "expected": "Die Antwort soll Frühe Hilfen und Elternberatung nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Gibt es finanzielle Unterstützung für Elternbildung?"},
+        "outputs": {
+            "expected": "Die Antwort soll Elternbildungsgutscheine erwähnen."
+        },
+    },
+    {
+        "inputs": {"question": "Wann bekomme ich einen Elternbildungsgutschein?"},
+        "outputs": {
+            "expected": "Die Antwort soll nennen, dass bei Geburt und bestimmten Altersstufen €20-Gutscheine vergeben werden."
+        },
+    },
+    {
+        "inputs": {"question": "Wo finde ich Beratung zu Pflege und Betreuung?"},
+        "outputs": {
+            "expected": "Die Antwort soll pflegeinfo-ooe.at nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wer beantwortet Fragen zu Kinderbetreuung in Oberösterreich?"},
+        "outputs": {
+            "expected": "Die Antwort soll Bildungsdirektion OÖ nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Leistungen bieten Tagesmütter an?"},
+        "outputs": {
+            "expected": "Die Antwort soll flexible Betreuung, auch über 6 Jahre, nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Angebote gibt es für Kinder mit Beeinträchtigung?"},
+        "outputs": {
+            "expected": "Die Antwort soll Caritas-Einrichtungen und integrative Angebote nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wer bietet Ferienbetreuung an?"}, 
+        "outputs": {
+            "expected": "Die Antwort soll Träger wie Kinderfreunde oder Drehscheibe Kind nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Gibt es flexible Betreuung für berufstätige Eltern?"}, 
+        "outputs": {
+            "expected": "Die Antwort soll Tagesmütter und flexible Modelle nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Kontakte gibt es für Elternberatung in Linz?"}, 
+        "outputs": {
+            "expected": "Die Antwort soll IGLU-Beratungsstellen nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wo finde ich Informationen zur Kindergartenpflicht?"}, 
+        "outputs": {
+            "expected": "Die Antwort soll Bildungsdirektion OÖ nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Gibt es Unterstützung bei besonderen Belastungen?"}, 
+        "outputs": {
+            "expected": "Die Antwort soll Mobile Familiendienste nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Was muss ich tun, wenn ich keine Betreuung für mein Kind finde?"}, 
+        "outputs": {
+            "expected": "Die Antwort soll Tagesmüttervereine und Jugendhilfe nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wo finde ich Kontaktdaten aller Kinderbetreuungseinrichtungen?"}, 
+        "outputs": {
+            "expected": "Die Antwort soll den Adressteil des Sozialratgebers nennen."
+        },
+    },
+
+    # -----------------------------------------------------------
+    # 5 EXAMPLES BASIERT AUF DEN HOCHGELADENEN PDFS
+    # -----------------------------------------------------------
+
+    {
+        "inputs": {"question": "Ab welchem Alter besteht Kindergartenpflicht in OÖ?"},
+        "outputs": {
+            "expected": "Die Antwort soll sagen: Kindergartenpflicht gilt ab dem vollendeten 5. Lebensjahr bis 31. August nach Vollendung des 6. Jahres (Dokument Kindergartenpflicht)."
+        }
+    },
+    {
+        "inputs": {"question": "Wo finde ich alle Kinderbetreuungseinrichtungen in OÖ auf einer Karte?"},
+        "outputs": {
+            "expected": "Die Antwort soll auf den Kinderkompass (DORIS) und die OGD-CSV verweisen (KBBE in OÖ Dokument)."
+        }
+    },
+    {
+        "inputs": {"question": "Wie läuft die Eingewöhnung im Kindergarten ab?"},
+        "outputs": {
+            "expected": "Die Antwort soll Schnupperbesuche, Aufnahmegespräch, langsame Steigerung der Aufenthaltsdauer usw. nennen (Dokument 'Neu im Kindergarten – Einstieg')."
+        }
+    },
+    {
+        "inputs": {"question": "Was ist eine Krabbelstube und wie unterscheidet sie sich vom Kindergarten?"},
+        "outputs": {
+            "expected": "Die Antwort soll Unterschiede nennen: Krabbelstuben für <3 Jahre, max. 10 Kinder, 6–8h, sozial gestaffelte Beiträge; 
+            Kindergarten ganzheitliche Förderung (Arten KBBEs Dokument)."
+        }
+    },
+    {
+        "inputs": {"question": "Bis wann muss ich mein Kind für eine KBBE anmelden?"},
+        "outputs": {
+            "expected": "Die Antwort soll sagen: Anmeldung grundsätzlich bis spätestens 31. März für Start am 1. September (Anmeldung KBBE Dokument)."
+        }
+    }
+]

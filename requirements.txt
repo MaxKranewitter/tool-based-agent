@@ -1,0 +1,31 @@
+############################
+# Kern der Anwendung & Frontend
+############################
+streamlit
+
+############################
+# OpenAI & LLM-Framework
+############################
+openai
+langchain>=0.2
+langchain-community>=0.2
+langchain-openai>=0.1
+
+############################
+# Monitoring, Logging & Evaluation
+############################
+langsmith
+openevals
+
+############################
+# Datenbank-Anbindung (Supabase / PostgreSQL)
+############################
+sqlalchemy>=2.0        # ORM + Datenbank-Verbindungen
+psycopg2-binary>=2.9   # PostgreSQL-Treiber für SQLAlchemy
+psycopg[binary]
+
+############################
+# Datenverarbeitung & Hilfsbibliotheken
+############################
+pandas>=2.0
+numpy>=1.26

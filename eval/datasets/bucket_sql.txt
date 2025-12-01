@@ -1,0 +1,321 @@
+examples = [
+    # 1–5: Gesamtumfang & Einrichtungsarten
+    {
+        "inputs": {"question": "Wie viele Kinderbildungs- und -betreuungseinrichtungen (KBBEs) sind im Datensatz insgesamt enthalten?"},
+        "outputs": {
+            "expected": "Die Antwort soll die Gesamtzahl der Einrichtungen direkt aus der KBBE-Tabelle berechnen (Anzahl Zeilen) und diese als Zahl nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele Einrichtungen im Datensatz sind als Kindergarten klassifiziert?"},
+        "outputs": {
+            "expected": "Die Antwort soll die Anzahl aller Datensätze mit art = 'Kindergarten' zählen und die Zahl ausgeben."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele Krabbelstuben gibt es laut Datensatz in Oberösterreich?"},
+        "outputs": {
+            "expected": "Die Antwort soll im Feld art alle Zeilen mit 'Krabbelstube' zählen und die Anzahl nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele Horte sind im Datensatz erfasst?"},
+        "outputs": {
+            "expected": "Die Antwort soll im Feld art alle Zeilen mit 'Hort' zählen und die Anzahl nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche unterschiedlichen Einrichtungsarten kommen im Datensatz vor?"},
+        "outputs": {
+            "expected": "Die Antwort soll die eindeutigen Werte aus der Spalte art als Liste ausgeben (z.B. Kindergarten, Krabbelstube, Hort, Mischformen)."
+        },
+    },
+
+    # 6–10: Verteilung nach Bezirk/Ort
+    {
+        "inputs": {"question": "Wie viele Einrichtungen liegen im Bezirk Linz-Stadt?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen mit bezirk = 'Linz-Stadt' filtern und die Anzahl nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele Einrichtungen befinden sich im Bezirk Wels-Stadt?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen mit bezirk = 'Wels-Stadt' filtern und die Anzahl nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele Einrichtungen gibt es in der Stadt Linz?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen mit ort = 'Linz' (bzw. entsprechenden Varianten wie 'Linz ' etc.) zählen und die Gesamtzahl nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele KBBEs hat die Stadt Wels laut Datensatz?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen mit ort = 'Wels' zählen und die Zahl nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele Einrichtungen sind im Ort Steyr eingetragen?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen mit ort, das 'Steyr' entspricht (z.B. 'Steyr', 'Steyr Stadt'), zählen und angeben."
+        },
+    },
+
+    # 11–15: Einrichtungen nach Ort auflisten
+    {
+        "inputs": {"question": "Welche Einrichtungen (Name und Art) gibt es im Ort Hagenberg im Mühlkreis?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen mit ort wie 'Hagenberg' oder 'Hagenberg im Mühlkreis' filtern und Name + art tabellarisch oder in einer Liste ausgeben."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen befinden sich in der Gemeinde Marchtrenk?"},
+        "outputs": {
+            "expected": "Die Antwort soll nach ort = 'Marchtrenk' filtern und alle passenden Einrichtungen mit Name, Art und ggf. Adresse ausgeben."
+        },
+    },
+    {
+        "inputs": {"question": "Welche KBBEs gibt es im Ort Gmunden (mit Art und Kennzahl)?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen mit ort = 'Gmunden' auswählen und für jede Einrichtung Kennzahl, Name und Art auflisten."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen liegen im Ort Leonding und welche Einrichtungsarten sind dort vertreten?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Einrichtungen mit ort = 'Leonding' auflisten und zusätzlich die unterschiedlichen Werte von art in Leonding nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche KBBEs gibt es im Ort Ried im Innkreis?"},
+        "outputs": {
+            "expected": "Die Antwort soll nach ort = 'Ried im Innkreis' filtern und alle passenden Einrichtungen (mindestens Name, Art, Adresse) ausgeben."
+        },
+    },
+
+    # 16–20: Abfragen zu Kennzahlen
+    {
+        "inputs": {"question": "Welche Einrichtung hat die Kennzahl 401007 und wo befindet sie sich?"},
+        "outputs": {
+            "expected": "Die Antwort soll die Zeile mit kennzahl = 401007 im Datensatz nachschlagen und Name, Ort, PLZ und Straße ausgeben, wie sie in der Tabelle stehen."
+        },
+    },
+    {
+        "inputs": {"question": "Wie lautet die vollständige Adresse der Einrichtung mit der Kennzahl 401101?"},
+        "outputs": {
+            "expected": "Die Antwort soll für kennzahl = 401101 Straße, Hausnummer (falls vorhanden), PLZ und Ort ausgeben."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Telefonnummer ist für die Einrichtung mit der Kennzahl 401101 hinterlegt?"},
+        "outputs": {
+            "expected": "Die Antwort soll die Telefonnummer aus der Spalte telefon für kennzahl = 401101 unverändert übernehmen oder angeben, dass keine eingetragen ist."
+        },
+    },
+    {
+        "inputs": {"question": "Welche E-Mail-Adresse ist für die Einrichtung mit der Kennzahl 401101 gespeichert?"},
+        "outputs": {
+            "expected": "Die Antwort soll die E-Mail-Adresse aus der Spalte email für kennzahl = 401101 nennen oder explizit sagen, wenn kein Wert vorhanden ist."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Webadresse ist für die Einrichtung mit der Kennzahl 401007 eingetragen?"},
+        "outputs": {
+            "expected": "Die Antwort soll den Wert aus der Spalte weburl für kennzahl = 401007 angeben oder erklären, dass keine URL hinterlegt ist."
+        },
+    },
+
+    # 21–25: Kontaktfelder & Missingness
+    {
+        "inputs": {"question": "Wie viele Einrichtungen haben eine hinterlegte Telefonnummer?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen zählen, bei denen telefon nicht leer bzw. nicht NULL ist, und die Anzahl nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele Einrichtungen haben eine hinterlegte E-Mail-Adresse?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen zählen, bei denen email nicht leer bzw. nicht NULL ist, und die Gesamtzahl angeben."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele Einrichtungen verfügen über eine Webadresse im Feld weburl?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Datensätze zählen, bei denen weburl gesetzt ist, und die Zahl nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen in Linz haben keine hinterlegte Telefonnummer?"},
+        "outputs": {
+            "expected": "Die Antwort soll nach ort = 'Linz' filtern und jene Einrichtungen ausgeben, bei denen telefon leer oder NULL ist."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen im Bezirk Linz-Land haben keine E-Mail-Adresse im Datensatz?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Einrichtungen mit bezirk = 'Linz-Land' auflisten, bei denen email leer oder NULL ist."
+        },
+    },
+
+    # 26–30: Öffnungszeiten & Ferienbetreuung
+    {
+        "inputs": {"question": "Welche Einrichtungen haben Öffnungszeiten im Feld web_opening_hours hinterlegt?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Einrichtungen auflisten, bei denen web_opening_hours nicht leer ist, und ggf. Ort/Name dazu ausgeben."
+        },
+    },
+    {
+        "inputs": {"question": "Welche KBBEs bieten laut Datensatz Ferienbetreuung in den Sommerferien an?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen identifizieren, in denen das Feld web_holiday_care.summer_main_holidays (oder analoger Ferien-Flag) einen positiven Wert/sinnvollen Text enthält, und diese auflisten."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen geben in den Daten an, dass sie in den Weihnachtsferien geöffnet sind?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen zurückgeben, bei denen das entsprechende Feld für Weihnachtsferien (z.B. web_holiday_care.weihnachtsferien) auf 'ja', 'offen' oder ähnlichen Wert gesetzt ist."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen bieten Betreuung in den Semesterferien an?"},
+        "outputs": {
+            "expected": "Die Antwort soll anhand des Feldes web_holiday_care.semesterferien erkennen, welche Einrichtungen geöffnet haben, und diese nennen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen bieten laut Datensatz Betreuung in den Osterferien an?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen mit positivem Eintrag im Feld web_holiday_care.osterferien ausgeben."
+        },
+    },
+
+    # 31–35: Kosten, Kriterien, Beschreibungen
+    {
+        "inputs": {"question": "Welche Einrichtungen haben Angaben zu Elternbeiträgen oder Kosten in web_costs hinterlegt?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Einrichtungen auflisten, bei denen web_costs nicht leer ist, und idealerweise die wichtigsten Kostenangaben kurz zusammenfassen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche KBBEs haben Angaben zu Aufnahme- oder Anmeldekriterien im Feld web_admission_criteria?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen zeigen, bei denen web_admission_criteria befüllt ist, und den Text je Einrichtung ausgeben."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen beschreiben ein spezielles pädagogisches Profil oder Angebot in web_short_description?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen mit nicht-leerem web_short_description nennen und die Kurzbeschreibung wiedergeben."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen haben Hinweise zur Ferienbetreuung oder zu Journaldiensten in web_other_notes?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen nennen, in deren web_other_notes z.B. 'Ferienbetreuung', 'Journaldienst' o.ä. vorkommt, und diese Hinweise zitieren."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen weisen in web_age_range explizit eine Betreuung ab 2 Jahren aus?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen mit einem web_age_range-Wert, der eine Untergrenze <= 2 Jahre hat (z.B. '2–6 Jahre'), filtern und die entsprechenden Einrichtungen auflisten."
+        },
+    },
+
+    # 36–40: Kapazität, Belegung, Vormerkungen
+    {
+        "inputs": {"question": "Für wie viele Einrichtungen ist eine geschätzte Platzkapazität in capacity_estimate hinterlegt?"},
+        "outputs": {
+            "expected": "Die Antwort soll die Anzahl der Einrichtungen nennen, bei denen capacity_estimate nicht NULL ist."
+        },
+    },
+    {
+        "inputs": {"question": "Für wie viele Einrichtungen liegen gleichzeitig Werte in capacity_estimate, current_occupancy und pre_registrations vor?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Zeilen zählen, in denen diese drei Spalten gleichzeitig nicht NULL sind, und die Anzahl ausgeben."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele freie Plätze gibt es insgesamt in allen Einrichtungen zusammen?"},
+        "outputs": {
+            "expected": "Die Antwort soll über alle Einrichtungen, bei denen capacity_estimate, current_occupancy und pre_registrations gesetzt sind, die Summe von max(0, capacity_estimate - current_occupancy - pre_registrations) bilden und diese Zahl ausgeben."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen haben laut Datensatz keine freien Plätze mehr?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen zurückgeben, für die capacity_estimate <= current_occupancy + pre_registrations ist (bzw. freie Plätze berechnet zu 0), und Name/Ort nennen."
+        },
+    },
+    {
+        "inputs": {"question": "In welchen Einrichtungen gibt es aktuell die meisten freien Plätze?"},
+        "outputs": {
+            "expected": "Die Antwort soll freie Plätze pro Einrichtung berechnen, nach diesem Wert absteigend sortieren und die Top-Einrichtungen (mit Name, Ort, freien Plätzen) nennen."
+        },
+    },
+
+    # 41–45: Freie Plätze nach Region
+    {
+        "inputs": {"question": "Welche Einrichtungen in Linz haben noch freie Plätze?"},
+        "outputs": {
+            "expected": "Die Antwort soll freie Plätze berechnen und alle Einrichtungen mit ort = 'Linz' nennen, bei denen freie Plätze > 0 sind, inkl. Zahl der freien Plätze."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen im Bezirk Urfahr-Umgebung haben noch freie Plätze?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen mit bezirk = 'Urfahr-Umgebung' filtern, freie Plätze berechnen und nur jene mit > 0 freien Plätzen ausgeben."
+        },
+    },
+    {
+        "inputs": {"question": "Wie viele Einrichtungen haben bereits Vormerkungen im Feld pre_registrations?"},
+        "outputs": {
+            "expected": "Die Antwort soll die Anzahl der Einrichtungen nennen, bei denen pre_registrations > 0 ist."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen haben besonders viele Vormerkungen im Verhältnis zur Kapazität?"},
+        "outputs": {
+            "expected": "Die Antwort soll den Quotienten pre_registrations / capacity_estimate berechnen, Einrichtungen nach diesem Verhältnis sortieren und die mit dem höchsten Verhältnis nennen."
+        },
+    },
+    {
+        "inputs": {"question": "In welchen Gemeinden ist die Auslastung der Einrichtungen besonders hoch?"},
+        "outputs": {
+            "expected": "Die Antwort soll pro Gemeinde eine aggregierte Auslastung (z.B. Summe current_occupancy / Summe capacity_estimate) berechnen und jene Orte mit den höchsten Werten nennen."
+        },
+    },
+
+    # 46–50: Anmeldeverfahren, Zeiten, Schließtage, Leitung
+    {
+        "inputs": {"question": "Welche Einrichtungen beschreiben ein Online-Anmeldeverfahren in web_registration_procedure?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen mit nicht-leerem web_registration_procedure auflisten, in deren Text Hinweise auf Online-Formulare, 'Online-Anmeldung' o.ä. vorkommen, und diese kurz zusammenfassen."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen geben spezielle Einschreibetermine in web_registration_times an?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen nennen, in deren web_registration_times z.B. konkrete Zeiträume oder Monate (wie Februar/März) angegeben sind, und diese Termine zitieren."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen in Linz verweisen bei der Anmeldung auf städtische Formulare?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen mit ort = 'Linz' und web_registration_procedure durchsuchen und jene nennen, in deren Text klar auf Formulare oder Seiten der Stadt Linz verwiesen wird."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen nennen in web_closing_days explizit Schließtage oder Ferienzeiten?"},
+        "outputs": {
+            "expected": "Die Antwort soll Einrichtungen mit nicht-leerem web_closing_days auflisten und die genannten Schließtage bzw. Zeiträume wiedergeben."
+        },
+    },
+    {
+        "inputs": {"question": "Welche Einrichtungen nennen in den Feldern web_director Informationen zur Einrichtungsleitung?"},
+        "outputs": {
+            "expected": "Die Antwort soll alle Einrichtungen nennen, bei denen web_director oder vergleichbare Felder mit einem Leitungsnamen gefüllt sind, und diese Namen ausgeben."
+        },
+    },
+]
