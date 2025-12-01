@@ -42,3 +42,13 @@ missingno
 requests
 beautifulsoup4
 tqdm
+
+############################
+# Matching / Fuzzy Matching
+############################
+rapidfuzz
+
+############################
+# PDF / Tabellenextraktion
+############################
+tabula-py
