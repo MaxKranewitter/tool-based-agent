@@ -29,3 +29,16 @@ psycopg[binary]
 ############################
 pandas>=2.0
 numpy>=1.26
+
+############################
+# Visualisierung & Exploration
+############################
+matplotlib
+missingno
+
+############################
+# Web-Scraping
+############################
+requests
+beautifulsoup4
+tqdm
