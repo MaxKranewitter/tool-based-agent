@@ -2,7 +2,7 @@
 
 ---
 
-Zugriff auf den Chatbot via Streamlit: https://leo-kinderbetreuung-chatbot.streamlit.app/
+Zugriff auf den Chatbot via Streamlit: https://leo-chatbot-ooe.streamlit.app/
 
 ---
 
