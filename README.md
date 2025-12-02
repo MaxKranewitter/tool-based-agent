@@ -1,5 +1,11 @@
 # Agentic RAG Chatbot für Kinderbetreuung in Oberösterreich
 
+---
+
+Zugriff auf den Chatbot via Streamlit: https://leo-kinderbetreuung-chatbot.streamlit.app/
+
+---
+
 Dieses Projekt entwickelt einen tool-basierten Single-Agent Chatbot ("LEO"), der Bürger*innen in Oberösterreich bei Fragen zur Kinderbetreuung unterstützt.  
 Der Chatbot kombiniert Informationen aus:
 
